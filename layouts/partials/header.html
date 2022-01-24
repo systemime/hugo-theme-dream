@@ -61,7 +61,7 @@
                 {{ range $tag := $first }}
                   {{ $title := index $tag "title" }}
                   {{ $link := index $tag "link" }}
-                  <a class="ui label" href="{{ $link }}" title="{{ $title }}">
+                  <a class="ui label" href="{{ $link }}/index.xml" title="{{ $title }}">
                     {{ $title }}
                   </a>
                 {{ end }}
@@ -77,7 +77,7 @@
           {{ range $tag := $rest }}
             {{ $title := index $tag "title" }}
             {{ $link := index $tag "link" }}
-            <a class="ui label" href="{{ $link }}" title="{{ $title }}">
+            <a class="ui label" href="{{ $link }}/index.xml" title="{{ $title }}">
               {{ $title }}
             </a>
           {{ end }}
